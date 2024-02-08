@@ -1,0 +1,549 @@
+@charset "utf-8";
+/*#region computer width */
+
+article{
+
+	position:center;
+	margin-top: 8em;
+	margin-bottom: 8em;
+	margin-left:15%;
+	margin-right: 15%;
+}
+figure{
+	display:flex;
+	flex-wrap:wrap;
+
+}
+figcaption{
+	/* position:absolute; */
+	display: flex;
+	
+	/* background-image: linear-gradient(to right,rgba(0,0,0,1),rgba(0,0,0,0.5)); */
+	font-size:1em;
+	color: white;
+	font-style: italic;
+	word-wrap:break-word;
+
+	text-align: center;
+}
+/*#region header */
+header{
+	min-height: 40em;
+	height: 100%;
+	width:100%;
+	background-attachment:local;
+	background-image:url("Flower.png");
+	background-blend-mode: darken;
+	background-repeat:repeat;
+	background-size:contain;
+	background-position:center;
+
+}
+
+header div{
+	background-color: #faead19a;
+	background-blend-mode:color-burn;
+	width: 100%;
+	height:40em;
+	align-items: center;
+	justify-content: center;
+	
+}
+header h1{
+display: flex;
+float:left;
+color: #ffffff;
+text-decoration:double;
+text-shadow:4px 5px 5px #000;
+font-size: 3em;
+}
+header p{
+
+	color: #ffffff;
+	text-decoration:double;
+	text-shadow:5px 5px #000;
+	font-size: 0.5em;
+}
+/*#endregion*/
+
+/*#region nav bar */
+
+#Fnbar{
+	position: fixed;
+	z-index: 1000;
+	align-items: center;
+	color: #000000;
+	width: 100%;
+	height: 4em;
+	background-color:rgb(247, 245, 205);	
+}
+#Fnbar a{
+	margin-left: 1em;
+	color: #000000;
+}
+.searchbar{
+	display:inline block;
+	position: absolute;
+	height:60%;
+	width: 20em;
+	margin-left: 70%;
+	float: right;
+}
+nav.TopBar{
+	position: fixed;
+	display: none;
+	float: left;
+	justify-content: start;
+	margin-top:2em;
+	margin-right:auto;
+	margin-left:auto;
+	height:100%;
+	width: 8.5em;
+	background-color:rgba(255, 252, 229, 0.849);
+	box-shadow: 3px 3px 5px rgb(131, 130, 130);
+	z-index: 20;
+
+}
+nav.TopBar ul{
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+	justify-content:center;
+	overflow: scroll;
+	flex-wrap:nowrap;
+	list-style-type: none;
+}
+.TopBar ul::-webkit-scrollbar {
+	display: none;
+  }
+nav.TopBar img{
+	width:1em;
+	height:0.8em;
+	margin:0.5em 1.5em;
+	border-radius: 0px;
+	position:center;
+}
+
+
+nav.TopBar li{
+	text-overflow: clip;
+	width: 100%;
+	height: 4em;
+  	margin: 1em 0.0em;
+  	background-color: #000000;
+	border-radius: 60px;
+}
+
+nav.TopBar a{
+	display: flex;
+	justify-content: center;
+	margin-top: 1.5em;
+	overflow: hidden;
+  	text-overflow: ellipsis;
+	font-size: smaller;
+}
+nav.TopBar li a img{
+	width:1em;
+	height:1em;
+	margin:0.3em;	
+}
+
+.TopBar.active{
+	display: flex;
+} 
+#phone-nav{
+	display: none;
+}
+#comp-nav{
+	display: flex;
+}
+/*#endregion*/
+/*#region SplitView*/
+.SplitView{
+	height: auto;
+
+}
+.SplitView .Left{
+	display: block;
+	left: 0;
+	width: 50%;
+}
+.SplitView .right{
+	display: block;
+	right: 0;
+	width: 50%;
+	
+}
+
+.SplitView .right img{
+	display: block;
+	margin-top: auto;
+	margin-bottom: auto;
+
+}
+
+.right figure img{
+
+	
+	max-height:100%;
+	max-width:100%;
+	min-width:5em;
+	min-height:5em;
+	margin-left: auto;
+	margin-right:  auto ;
+
+}
+/* #endregion */
+/*#region gallary */
+#Collection{
+	width: 100%;
+	height: auto;
+}
+#Collection figure{
+	align-items:center;
+}
+.gallary{
+	flex-direction: row;
+	height:100%;
+	overflow: scroll;
+	scroll-behavior: smooth;
+	
+}
+.gallary::-webkit-scrollbar{
+	display: none;
+}
+.gallary div{
+	display: flex;
+}
+
+.Blabel{
+	display: block;
+	margin: 0.5em;
+	width: 25%;
+	height: 100%;
+	background-color: rgb(255, 214, 214);
+	border-radius: 10px;
+	text-align: center;
+	text-overflow: ellipsis;
+	font-size: 2em;
+
+}
+.gallary img{
+	display: flex;
+	max-height:50em;
+	max-width:50em;
+	min-width:10em;
+	min-height:10em;
+	width: 100%; 
+	height: auto;
+	margin: 1em; 
+}
+.gallary img:hover{
+	box-shadow: 5px 5px 5px #000;
+}
+/*#endregion */
+/*#region TeamInfro*/
+
+.infroCards{
+	width:100%;
+	height: auto;
+	
+}
+.AllCard{
+
+	flex-direction: row;
+}
+.card{
+	margin: 1em;
+	display: block;
+	box-shadow: 1px 1px 5px rgb(239, 239, 239);
+	height: 12em;
+	width:10em;
+}
+
+.card figcaption{
+	border-width: 0em;
+	margin: 0;
+	width:8em;
+	height: 6em;
+	overflow-wrap: anywhere;
+	overflow: hidden;
+
+	
+}
+card figcaption a{
+	display: block;
+	width: 100%;
+
+}
+.card figure{
+	margin: 1em;
+	height: auto;
+	justify-content: center;
+}
+.card:hover{
+	background-color:azure;
+}
+#authorIcon{
+	background-color: lightpink;
+	border: 0.1em dotted #000000;
+	border-radius: 30px;
+}
+/*#endregion*/
+
+/*#region Community*/
+#Community .container{
+	height: 15em;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items:self-start;	
+	justify-content: center;
+	overflow: hidden;
+	
+}
+#CommIcon1{
+	position:relative;
+
+}
+#CommIcon2{
+	position:absolute;
+
+}
+
+#CommIcon1 img{
+	width:10em;
+	height:10em;
+	border-width:20px 20px;
+	border-radius:180px;
+}
+
+#CommIcon2 img{
+	width:10em;
+	height:10em;
+	border-width:20px 20px;
+	border-radius:180px;
+	/*transform: translateX(300px);*/
+	 opacity: 0;
+	 transition:opacity 0.5s ease-in-out;
+	
+}
+.container:hover #CommIcon2 img{
+  opacity: 1;
+transition:opacity 0.5s ease-in-out;
+  /* 'cancel' transition */
+}
+
+.LinkIcon{
+	height: auto;
+	width: 50%;
+	margin: 1em;
+	display:flex;
+	justify-content: center;
+	position:absolute;
+	opacity: 0;
+	transform: translateX(0);
+}
+.LinkIcon img{
+	
+	width:5em;
+	height:5em;
+	border-width:20px 20px;
+	border-radius:180px;
+}
+.LinkIcon div{
+	
+	margin-left:auto;
+	margin-right:auto;
+
+
+}
+	
+.container:hover .LinkIcon {
+	 opacity: 1;
+	 transform: translateY(150px);
+	transition:opacity 1.5s ease-in-out,transform 1s ease-in-out;
+}
+@keyframes bouncing{
+	0%{top:0px;bottom:0px;}
+	50%{transform: translateY(10px);}
+	100%{transform: translateY(-20px);}
+}
+#twitter a:hover,#discord a:hover,#tumblr a:hover{
+	animation:bouncing 1s ease-in-out infinite alternate both;
+	animation-play-state:running;
+}
+	/*#endregion*/
+#Roadmap figure{
+
+	width: fit-content;
+}
+footer{
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:center;
+	background-color:rgb(166, 232, 247);
+	height:1%;
+	font-size:8px;
+	font-style: italic;
+	text-align:center;
+	padding:1px;
+}
+
+/* #endregion*/
+@media only screen and (max-width:850px){
+/*#region header */
+	body,header{
+		font-size:1em;
+		line-height:2em;
+		overflow-x: hidden;
+
+	}
+	
+	header h1{
+		font-size:4em;
+		margin:10em 10em;
+	}
+	/*#endregion*/
+
+	section{
+		margin-top:5em;
+		
+	}
+	figcaption{
+		margin-top:32em;
+	}
+	
+/*#region nav bar */
+	nav.TopBar{
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		width: 5em;
+
+	}
+	nav.TopBar img{	
+	margin-top:0.5em;
+	margin-bottom:0.5em;
+    height: 2em;
+    width: 2em;
+	}
+
+	nav.TopBar ul{
+        list-style-type: none;
+		flex-direction: column;
+        padding: 0;
+        width: 100%;
+		height: 38em;
+	
+
+	}
+	nav.TopBar li {
+        display: block;
+        text-decoration: none;
+		margin: 1em 0.0em;
+		height: 9%;
+
+    }
+	nav.TopBar li a{
+		margin-top: 0.3em;
+		width:100%;
+		height: 100%;
+	
+	}
+	nav.TopBar li a img{
+		width:3em;
+		height:3em;
+		
+
+	}
+	#navicon {
+		display: block;
+	}
+	.TopBar.active{
+		display: none;
+	} 
+	.searchbar{
+		margin: 10em;
+		width: 12em;
+	}
+	#comp-nav{
+		display: none;
+	}
+	#phone-nav{
+		display: flex;
+	}
+
+	
+	/*#endregion*/
+/*#region SplitView*/
+	.SplitView{
+		display: block;
+		width: 100%;
+		height: auto;
+	}
+	.SplitView .Left{
+		display: block;
+		right: auto;
+		left: auto;
+		width: 100%;
+	}
+	.SplitView .right{
+		display: block;
+		margin: 0em;
+
+		right: auto;
+		left: auto;
+		width: 100%;
+	}
+
+	.SplitView .right img{
+		display: block;
+		margin: 0;
+		
+	
+	}
+	/*#endregion*/
+
+/* #region gallary */
+	#Collection {
+	height:25%;
+	width:100%;}
+	.gallary{
+		flex-direction: column;
+		justify-content: center;
+		-ms-flex-item-align: center;
+	}
+	.gallary #F{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+		height: 100%;
+
+	}
+	.gallary img{
+		display: block;
+	}
+	/* #endregion */
+	
+/* #region Team */
+.AllCard{
+
+	flex-direction: column;
+}
+	/*#endregion*/
+
+.LinkIcon div{
+	flex-direction: column;
+	margin: 1;
+	
+}
+.container:hover .LinkIcon{
+	 opacity: 1;
+	 transform: translateY(150px);
+	transition:opacity 1.5s ease-in-out,transform 1s ease-in-out;
+}
+
+
+}

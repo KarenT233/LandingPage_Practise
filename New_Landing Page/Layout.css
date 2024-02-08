@@ -1,0 +1,106 @@
+@charset "utf-8";
+html{
+	background-image:url("Flower.png");
+	
+	max-width:2600px;
+	max-height:2600px;
+	min-width: 480px;
+	min-height: 640px;
+	height:100%;
+	width:100%
+
+	}
+article, aside, figcaption, figure,
+footer, header, main, nav, section { 
+   display: block;
+}
+address, article, aside, blockquote, body, cite, 
+div, dl, dt, dd, em, figcaption, figure, footer, 
+h1, h2, h3, h4, h5, h6, header, html, img, 
+li, main, nav, nav a, ol, p, section, span, ul {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   vertical-align: baseline;
+   background: transparent;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box; 
+    text-align:justify center;
+	font-family:Verdana,Sans-serif;
+	color:rgb(67, 67, 67);
+}
+section{
+	margin-top: 4em;
+	margin-bottom: 4em;
+	max-width: 100%;
+	max-height: 100%;
+	
+
+
+	
+}
+header{
+	font-size:20px;
+	font-style:bold;
+	max-width: 100em;
+	max-height: 100em;
+}
+h1{
+	font-size:50px;
+	line-height:1em;
+}
+h2{
+	font-size:40px;
+	margin-top:1em;
+	margin-bottom:0.5em;
+}
+
+h3{
+	font-size:20px;
+}
+img{
+	max-height: 100%;
+	max-width:100%;
+	border-radius: 20px
+}
+body {
+	width: 100%;
+	height: auto;
+	overflow-x: scroll;
+	position:center;
+	line-height: 2em;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family:Trebuchet MS,Sans-serif;
+	color:rgb(0, 0, 0);
+	margin: 1em;
+}
+p{
+	margin: 1em;
+}
+nav{
+font-size:1em;
+}
+nav ul {
+   list-style: none;
+   list-style-image: none;
+   	margin: 0;
+	padding: 0;
+	text-align:center;
+}
+
+nav a {
+	color:rgb(255, 255, 255);
+	font-family: "Helvetica" , serif;
+	font-weight:bold;
+	text-decoration: none;
+    text-align: center;
+	
+}
+a:hover{ color:rgb(195, 233, 233);
+font-style:bold;}
+
+div{display:flex;
+}

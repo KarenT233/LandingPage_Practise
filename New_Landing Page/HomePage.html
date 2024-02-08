@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" /> 
+<link href="Layout.css" rel="stylesheet"/>
+<link href="HomePage_sytle.css" rel="stylesheet"/>
+<script src="control.js" defer></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous" defer></script>
+<title>GlassHeart</title>
+<link rel = "Html icon" href = "Flower.png" type = "image/x-icon">
+</head>
+<body>
+	
+	<nav id="Fnbar" class="navbar navbar-expand-lg navbar-light">
+
+		<a class="navbar" id="navicon" href="#">
+			<img src="Flower.png" width="30" height="30" class="d-inline-block align-top"
+				alt="">
+			GlassHeart
+		</a> 
+
+		<div class="searchbar">
+			  <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+			  <button class="btn btn-outline-success sm" type="submit">Search</button>
+		</div>
+
+	</nav>
+	<nav class="TopBar">
+		<!-- <a href="#" id="navicon"><img src="navicon.png" alt="" /></a> -->
+		<div  class="container">
+			<ul class="col" id="comp-nav">
+				<li class="col-auto"><a href="#GlassHeart"><img src="Icon/GlassHeart_Icon.png" alt="" />GlassHeart</a></li>
+				<li class="col-auto"><a href="#Collection"><img src="Icon/gallary.png" alt="" />Collection</a></li>
+				<li class="col-auto"><a href="#Team"><img src="Icon/Ourteam.png" alt="" />Our Team</a></li>
+				<li class="col-auto"><a href="#Community"><img src="Icon/community.png" alt="" />Community</a></li>
+				<li class="col-auto"><a href="#Roadmap"><img src="Icon/map.png" alt="" />Roadmap</a></li>
+			</ul>
+			<ul class="col" id="phone-nav">
+				<li class="col-1 "><a href="#GlassHeart"><img src="Icon/GlassHeart_Icon.png" alt="" /></a></li>
+				<li class="col-1"><a href="#Collection"><img src="Icon/gallary.png" alt="" /></a></li>
+				<li class="col-1"><a href="#Team"><img src="Icon/Ourteam.png" alt="" /></a></li>
+				<li class="col-1"><a href="#Community"><img src="Icon/community.png" alt="" /></a></li>
+				<li class="col-1"><a href="#Roadmap"><img src="Icon/map.png" alt="" /></a></li>
+			</ul>
+		</div>	
+		</nav>
+	
+<header>
+	<div>
+		<h1>GlassHeart</h1>
+		
+	</div>
+	
+	<!-- <audio controls autoplay loop>
+	<source src="LiEat_Rearrange_Soundtrack.mp3" type="audio/mpeg">
+	</audio> -->
+	
+</header>
+
+<article>
+ <section id="GlassHeart">
+	<div class="SplitView">
+		<div class="Left" id="Detail">
+			<h2>Background</h2>
+			<p>
+				<b>Clear and Pure</b><br>
+				prototype project which is a dream landing platform, for amateur published their own creation. Finding the long lost Pure in your heart.			
+			</p>
+		</div>
+		<div class="right" id="fig">
+			<figure>
+				<img src="cover.gif" alt="" />
+
+			</figure>
+		</div>
+	</div>
+		
+</section>
+
+
+<section id="Collection">
+<h2>Collection</h2>
+<p>Every flower and gem have their own langauage. The design added deferent flower, gems and some Tarot element to tell ones' character traits.</p>
+<div class="gallary">
+	<p class="Blabel"><b>花占</b></p>
+	<div class="row" id="F">
+		<div class="col-4">
+		  <img src="gallary/F1.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+		</div>
+		<div class="col-4">
+		  <img src="gallary/F2.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+		</div>
+		<div class="col-4">
+		  <img src="gallary/F3.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+		</div>
+		<div class="col-4">
+		  <img src="gallary/F4.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+		</div>
+	  </div>
+</div>
+
+
+</section>
+
+
+<section id="Team">
+	<h2>Our Team</h2>
+	<area class="infroCards">
+	<div class="AllCard">
+		<div class="card" id="infro_Koi">
+		<figure>
+			<div id="authorIcon">
+				<img src="NFT.png" alt="Miwasiba" />
+			</div>
+		<figure>
+		<figcaption>
+			<p><a href="#">Koi</a><br>creator of 花占</p>
+		</figcaption>
+		</div>
+		<div class="card" id="infro_Koi">
+			<figure>
+				<div id="authorIcon">
+					<img src="NFT.png" alt="Miwasiba" />
+				</div>
+			<figure>
+			<figcaption>
+				<p><a href="#">Koi</a><br>creator of 花占</p>
+			</figcaption>
+		</div>
+	</div>
+	</area>
+	
+</section>
+
+<section id="Community">
+	<h2>Community</h2>
+
+		<div class="container">
+			<div id="CommIcon1">
+				<img src="community_icon.png" alt="" />
+			</div>
+			<div id="CommIcon2">
+				<img src="community_icon2.png" alt="" />
+			</div>
+			<div class="LinkIcon">
+				<div id="tumblr">
+				<a href="#"><img src="tumblr_icon.png" alt="tumblr" /></a>
+				</div>
+				
+				<div id="twitter">
+				<a href="#"><img src="twitter_icon.png" alt="twitter"/></a>
+				</div>
+				
+				<div id="discord">
+				<a href="#"><img src="discord_icon.png" alt="discord_icon"/></a>
+				</div>
+			</div>
+		</div>
+
+</section>
+<section id="Roadmap">
+<h2>Roadmap</h2>
+<figure>
+	<img src="TimeLine.gif" alt=""/>
+</figure>
+</section>
+
+
+
+</article>
+<footer>
+	<p>Made by Tsui Ka Ying 190576688</p>
+
+</footer>
+</body>
+</html>
